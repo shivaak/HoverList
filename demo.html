@@ -1,0 +1,39 @@
+<html>
+	<head>
+		<link href="css/hoverList.css" rel="stylesheet">
+
+		<script src="js/jquery.min.js"></script>
+		<script src="js/hoverList.js"></script>
+
+		<script>
+			$(document).ready(function(){
+
+				$("#divTest").hoverList({
+					listData:['Chennai','Coimbatore','Madurai','Trichy','Salem','Vellore','Dindugal','Thoothukudi','Sivakasi','Dharmapuri','Krishnagiri','Hosur'],
+					height : '150px',
+					width : '200px',
+					scrollSpeed : 100
+				});
+
+				$("#idGetVal").on('click',function(){
+					var s = $("#divTest").hoverList("get_selection_element");
+					alert($(s).text());
+				});
+			});
+
+
+		</script>
+
+	</head>
+	<body>
+
+<h2>A sample webpage which utilizes hoverlist plugin to display list of available cities</h2>
+
+<h3>Cities : </h3>
+		<div id="divTest">
+		</div>
+
+<br><br><br><br>
+		<input type="button" id="idGetVal" value="Get Selected Value" />
+	</body>
+</html>

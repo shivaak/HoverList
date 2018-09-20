@@ -1,0 +1,128 @@
+div.hoverList.cover {
+    box-shadow: 5px 5px 5px lightgrey;
+    padding: 10px;
+    overflow: hidden;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+div.hoverList.prev:before { content: "\25B2"; }
+
+div.hoverList.next:before { content: "\25BC"; }
+
+div.hoverList.prev{
+    top: 5px;
+    -webkit-border-radius: 10px 10px 0 0;
+    -moz-border-radius: 10px 10px 0 0;
+    border-radius: 10px 10px 0 0;
+}
+div.hoverList.next {
+    bottom: 5px;
+    -webkit-border-radius: 0 0 10px 10px;
+    -moz-border-radius: 0 0 10px 10px;
+    border-radius: 0 0 10px 10px;
+}
+
+div.hoverList.prev,
+div.hoverList.next{
+    box-shadow: 2px 2px 2px grey;
+    width: 100%;
+    color: black;
+    line-height: 27px;
+    text-align: center;
+    border: 1px solid #A5A9AC;
+    background: #EBEBEB;
+    background: -moz-linear-gradient(top, #F0F0F0 0%, #EBEBEB 100%);
+    /* background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #F0F0F0), color-stop(100%, #EBEBEB)); */
+    background: -webkit-linear-gradient(top, #F0F0F0 0%, #EBEBEB 100%);
+    background: -o-linear-gradient(top, #F0F0F0 0%, #EBEBEB 100%);
+    background: -ms-linear-gradient(top, #F0F0F0 0%, #EBEBEB 100%);
+    background: linear-gradient(top, #F0F0F0 0%, #EBEBEB 100%);
+    cursor:pointer;
+}
+
+div.hoverList.prev.noscroll,
+div.hoverList.next.noscroll
+{
+    color: #999;
+    opacity:0.3;
+}
+
+div.hoverList.prev.noscroll:hover,
+div.hoverList.next.noscroll:hover
+{
+    color: #999;
+    opacity:0.3;
+}
+
+div.hoverList.prev:hover,
+div.hoverList.next:hover {
+    color:green;
+    opacity:1;
+}
+
+div.hoverList.listWrapper{
+    margin-top:5px;
+    margin-bottom:5px;
+    overflow: hidden;
+}
+
+div.hoverList ul.dynamicList {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+div.hoverList ul.dynamicList li {
+    //font: 200 15px/1.5 Verdana, Helvetica, sans-serif;
+    font-family: "Arial","Helvetica",sans-serif,serif;
+    border-bottom: 1px solid #ccc;
+}
+
+div.hoverList ul.dynamicList>li:last-child {
+    /*border: none;*/
+}
+
+div.hoverList ul.dynamicList>li a {
+    text-decoration: none;
+    color: #000;
+
+    -webkit-transition: font-size 0.3s ease, background-color 0.3s ease;
+    -moz-transition: font-size 0.3s ease, background-color 0.3s ease;
+    -o-transition: font-size 0.3s ease, background-color 0.3s ease;
+    -ms-transition: font-size 0.3s ease, background-color 0.3s ease;
+    transition: font-size 0.3s ease, background-color 0.3s ease;
+    display: block;
+    cursor:pointer;
+    margin:3px;
+}
+
+div.hoverList ul.dynamicList li>a.list_selected_item{
+    //background-color: #03A9F4;
+    background-color: #a7e2fd;
+}
+
+div.hoverList ul.dynamicList li a:hover{
+    //font-size: 18px;
+    font-size: 105%;
+    background-color: #e4e5e3;
+    color:#004e9d;
+}
+
+div.hoverList ul.dynamicList li a:focus {
+    outline: 0;
+}
+
+.selectedIP, .selectedCity{
+    font-size: 18px;
+    color:dodgerblue !important;
+    background: #f6f6f6;
+}
+
+div.hoverList.loadingIconDiv{
+
+}
+div.hoverList.loadingIconDiv>img{
+    height:100px;
+    width:100px;
+}
